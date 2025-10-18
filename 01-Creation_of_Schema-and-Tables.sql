@@ -1,0 +1,5 @@
+DROP SCHEMA IF EXISTS oficina;
+
+CREATE SCHEMA IF NOT EXISTS oficina;
+
+USE oficina;
