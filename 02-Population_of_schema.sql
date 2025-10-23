@@ -205,18 +205,18 @@ INSERT INTO cliente_pj (idCliente, CNPJ, RazaoSocial, NomeFantasia) VALUES
 -- -----------------------------------------------------
 -- 5. VEÍCULOS (Amostra para PFs e PJs)
 -- -----------------------------------------------------
--- Veículo (idFabricante) refere-se a montadora(idMontadora)
+-- Veículo (idMontadora) refere-se a montadora(idMontadora)
 
 -- Veículos de Clientes PF (IDs 1-10)
 -- 1 veículo (Clientes 1-5)
-INSERT INTO veiculo (idCliente, idFabricante, AnoFabricacao, AnoModelo, Tipo, Placa, Cor) VALUES
+INSERT INTO veiculo (idCliente, idMontadora, AnoFabricacao, AnoModelo, Tipo, Placa, Cor) VALUES
 (1, 1, '2019', '2019', 'CARRO', 'ABC1111', 'Preto'),
 (2, 2, '2020', '2021', 'CARRO', 'BBB2222', 'Branco'),
 (3, 3, '2018', '2018', 'CARRO', 'CCC3333', 'Vermelho'),
 (4, 4, '2021', '2021', 'CAMINHONETE', 'DDD4444', 'Azul'),
 (5, 5, '2022', '2022', 'CARRO', 'EEE5555', 'Prata');
 -- 2 veículos (Clientes 6-10)
-INSERT INTO veiculo (idCliente, idFabricante, AnoFabricacao, AnoModelo, Tipo, Placa, Cor) VALUES
+INSERT INTO veiculo (idCliente, idMontadora, AnoFabricacao, AnoModelo, Tipo, Placa, Cor) VALUES
 (6, 6, '2017', '2018', 'CARRO', 'FFF6666', 'Cinza'),
 (6, 7, '2020', '2020', 'CARRO', 'GGG7777', 'Verde'),
 (7, 1, '2019', '2020', 'CAMINHONETE', 'HHH8888', 'Preto'),
@@ -231,18 +231,18 @@ INSERT INTO veiculo (idCliente, idFabricante, AnoFabricacao, AnoModelo, Tipo, Pl
 
 -- Veículos de Clientes PJ (Amostra para clientes 21, 22 e 30)
 -- Cliente 21 (LogFast) - 5 veículos (Caminhões/Caminhonetes)
-INSERT INTO veiculo (idCliente, idFabricante, AnoFabricacao, AnoModelo, Tipo, Placa, Cor) VALUES
+INSERT INTO veiculo (idCliente, idMontadora, AnoFabricacao, AnoModelo, Tipo, Placa, Cor) VALUES
 (21, 1, '2020', '2020', 'CAMINHÃO', 'PJA1001', 'Branco'),
 (21, 2, '2020', '2020', 'CAMINHÃO', 'PJA1002', 'Branco'),
 (21, 1, '2021', '2021', 'CAMINHÃO', 'PJA1003', 'Branco'),
 (21, 4, '2022', '2022', 'CAMINHONETE', 'PJA1004', 'Prata'),
 (21, 4, '2022', '2022', 'CAMINHONETE', 'PJA1005', 'Prata');
 -- Cliente 22 (Mercado ABC) - 2 veículos (Caminhonetes)
-INSERT INTO veiculo (idCliente, idFabricante, AnoFabricacao, AnoModelo, Tipo, Placa, Cor) VALUES
+INSERT INTO veiculo (idCliente, idMontadora, AnoFabricacao, AnoModelo, Tipo, Placa, Cor) VALUES
 (22, 4, '2021', '2021', 'CAMINHONETE', 'PJB2001', 'Branco'),
 (22, 4, '2021', '2021', 'CAMINHONETE', 'PJB2002', 'Branco');
 -- Cliente 30 (TotalLog) - 3 veículos
-INSERT INTO veiculo (idCliente, idFabricante, AnoFabricacao, AnoModelo, Tipo, Placa, Cor) VALUES
+INSERT INTO veiculo (idCliente, idMontadora, AnoFabricacao, AnoModelo, Tipo, Placa, Cor) VALUES
 (30, 1, '2022', '2022', 'CAMINHÃO', 'PJC3001', 'Vermelho'),
 (30, 1, '2022', '2022', 'CAMINHÃO', 'PJC3002', 'Vermelho'),
 (30, 4, '2020', '2020', 'CAMINHONETE', 'PJC3003', 'Preto');

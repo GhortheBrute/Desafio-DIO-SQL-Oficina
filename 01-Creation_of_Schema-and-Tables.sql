@@ -69,14 +69,14 @@ CREATE TABLE IF NOT EXISTS cliente_pj (
 CREATE TABLE IF NOT EXISTS veiculo (
     idVeiculo INT PRIMARY KEY AUTO_INCREMENT,
     idCliente INT NOT NULL,
-    idFabricante INT NOT NULL,
+    idMontadora INT NOT NULL,
     AnoFabricacao YEAR NOT NULL,
     AnoModelo YEAR NOT NULL,
     Tipo ENUM('CARRO','CAMINHONETE','CAMINHÃO') NOT NULL,
     Placa CHAR(7) NOT NULL UNIQUE,
     Cor VARCHAR(20) NOT NULL,
     CONSTRAINT fk_veiculo_fabricante1
-        FOREIGN KEY (idFabricante) REFERENCES montadora (idMontadora),
+        FOREIGN KEY (idMontadora) REFERENCES montadora (idMontadora),
     CONSTRAINT fk_veiculo_cliente1
         FOREIGN KEY (idCliente) REFERENCES cliente (idCliente)
 ) ENGINE = InnoDB;
